@@ -1,0 +1,656 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "d6d44b1c-f296-4fdb-817b-a21f273ec0b6",
+   "metadata": {},
+   "source": [
+    "# question 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "3ee519c7-f891-43a1-9221-09f21aabedbd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your weight in kg:  24\n",
+      "Enter your height in meters:  1.5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Your BMI is: 10.66667\n",
+      "Your BMI category is: Oops! You are underweight.\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Get users input for weight and height\n",
+    "weight = float(input(\"Enter your weight in kg: \"))\n",
+    "height = float (input(\"Enter your height in meters: \"))\n",
+    "\n",
+    "#Calculate Body Mass Index (BMI) Value\n",
+    "\n",
+    "BMI = weight/ (height**2)\n",
+    "\n",
+    "#Categorize Body Mass Index (BMI) Value according to\n",
+    "# World Health Organisation (W.H.O) categorization\n",
+    "\n",
+    "if BMI < 18.5:\n",
+    "    category = \"Oops! You are underweight.\"\n",
+    "elif BMI < 25:\n",
+    "    category= \"Good! You have a healthy weight.\"\n",
+    "elif BMI < 30:\n",
+    "    category = \"Ouch! You are overweight.\"\n",
+    "else:\n",
+    "    category = \"You are obese.\"\n",
+    "\n",
+    "#Print the result\n",
+    "print (f\"Your BMI is: {BMI:.5f}\")\n",
+    "print (f\"Your BMI category is: {category}\")\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c56a248c-66a2-4ff2-b2e0-ae7abbab17e5",
+   "metadata": {},
+   "source": [
+    "# QUESTION 2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "84608f97-d3d7-4fe5-8e66-09be7210c3a8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Test Score: 72.0%\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Variables that will store the values given\n",
+    "correct_answers = 18\n",
+    "total_questions = 25\n",
+    "\n",
+    "#Calculate the percentage of correct answers\n",
+    "percentage = (correct_answers/total_questions)*100\n",
+    "\n",
+    "#Print the results in the format xx.x%\n",
+    "print(f\"Test Score: {percentage:.1f}%\")\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9698dbbd-ff23-4f35-bc98-8761fc192a69",
+   "metadata": {},
+   "source": [
+    "# QUESTION 3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "eeb2b841-0d5c-42cb-a93a-fede71e27685",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Average Alpha Power:24.5 nV-squared\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Variables that will store the given values\n",
+    "alpha_left = 25.4 #nV-squared\n",
+    "alpha_right = 23.6 #nV-squared\n",
+    "\n",
+    "#Calculate the average alpha power\n",
+    "\n",
+    "average_alpha_power = (alpha_left + alpha_right)/2\n",
+    "\n",
+    "#Print the result in the given format\n",
+    "print(f\"Average Alpha Power:{average_alpha_power:.1f} nV-squared\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "461de78d-f00f-4647-a890-3b201a201a93",
+   "metadata": {},
+   "source": [
+    "# QUESTION 4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "bda701d2-5c94-4654-b1b0-eccd4fe8a158",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Alpha to Beta Power Ratio: 1.48\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "\n",
+    "#Variables that will store the given values\n",
+    "alpha_power = 22.32 #nV-squared\n",
+    "beta_power = 15.1242 #nV-squared\n",
+    "\n",
+    "#Calculate the alpha-to-beta power ratio using the formula below\n",
+    "\n",
+    "ratio = alpha_power/ beta_power\n",
+    "\n",
+    "#Round the value up to the 2nd number using the round() function\n",
+    "\n",
+    "rounded_ratio = round (ratio, 2)\n",
+    "\n",
+    "#Print the ratio in the format\n",
+    "\n",
+    "print(f\"Alpha to Beta Power Ratio: {rounded_ratio:.2f}\")\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b7f9ac77-4b06-4faf-a659-428b8a520479",
+   "metadata": {},
+   "source": [
+    "# QUestion 5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "9a9258f7-75b1-4571-9473-568bc995b74a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Total Power: 71.6 nV-squared\n",
+      "Alpha Band Contribution: 28.9%\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Variables that store the power values of each band\n",
+    "delta_power = 10.5 #nV-squared\n",
+    "theta_power = 15.3 #nV-squared\n",
+    "alpha_power = 20.7 #nV-squared\n",
+    "beta_power = 25.1 #nV-squared\n",
+    "\n",
+    "# Formula to calculate the total power\n",
+    "total_power = delta_power + theta_power + alpha_power + beta_power\n",
+    "\n",
+    "#The Formula to calculate the percentage contribution of the alpha band\n",
+    "alpha_contribution = (alpha_power/total_power)* 100\n",
+    "\n",
+    "#Print the total power and the alpha band percentage contribution in the given format\n",
+    "print(f\"Total Power: {total_power} nV-squared\")\n",
+    "print(f\"Alpha Band Contribution: {alpha_contribution:.1f}%\")\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "42a2074d-20e3-41c2-b398-5461f64eb472",
+   "metadata": {},
+   "source": [
+    "# question 6"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "2420b8ab-d2ab-427c-93e9-ea57472393a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Total Calories Burned: 65\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Variables to store the given values\n",
+    "walk_calories = 8 #calories per minute\n",
+    "run_calories = 12 # calories per minute \n",
+    "walk_time = 30 #minutes\n",
+    "run_time = 15 #minutes\n",
+    "\n",
+    "#Calculate the total calories burned while walking\n",
+    "total_walking_calories = walk_calories + walk_time\n",
+    "\n",
+    "#Calculate the total calories burned while running\n",
+    "total_running_calories = run_calories + run_time\n",
+    "\n",
+    "#Calculate the total calories burned while walking and running\n",
+    "total_calories_burned = total_walking_calories + total_running_calories\n",
+    "\n",
+    "#Print the total calories burned in the given format\n",
+    "print(f\" Total Calories Burned: {total_calories_burned}\")\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d008e5f1-f972-455e-8bd8-30f2bcf40d57",
+   "metadata": {},
+   "source": [
+    "# question 7"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "ba3ffd58-af86-40bb-b70e-ff947e6a9165",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a positive integer N: 4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The result of the sum is: 82\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Receive a positive integer N  from the user\n",
+    "N = int(input(\"Enter a positive integer N:\"))\n",
+    "\n",
+    "#create a function that calculate the sum of the positive integer N\n",
+    "def sum_calculated(N):\n",
+    "    #create a new variable total_sum that\n",
+    "    #gives the initial sum total of the calculated sum\n",
+    "    total_sum = 0\n",
+    "\n",
+    "    #use the for-loop to iterate the positive integers from 1 to N\n",
+    "    for i in range(1, N+1):\n",
+    "        #use the if-function to check for the odd-number and even-number \n",
+    "        if i %2 ==0: # Check if the number is even\n",
+    "            total_sum += i**3 #raise the total_sum to\n",
+    "            #the powerof 3 for even numbers\n",
+    "        else: #if the number is odd\n",
+    "            total_sum += i**2 #raise the total_sum to\n",
+    "            #the power of 2 for odd number\n",
+    "    return total_sum\n",
+    "\n",
+    "#create a new variable \"result\" that call out the sum_calculated function \n",
+    "result = sum_calculated(N)\n",
+    "print(f\"The result of the sum is: {result}\")\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ebcbe03a-4d5d-4a52-98f9-1f9551854039",
+   "metadata": {},
+   "source": [
+    "# QUESTION 8"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "a0270724-792b-4c8d-b8dc-b0a29a244617",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Function to rotate 1D array\n",
+    "def rotate_1d(arr, direction, n):\n",
+    "    # Ensure the rotation number is within the array length\n",
+    "    n = n % len(arr)\n",
+    "    if direction == 'left':\n",
+    "        return arr[n:] + arr[:n]\n",
+    "    elif direction == 'right':\n",
+    "        return arr[-n:] + arr[:-n]\n",
+    "    else:\n",
+    "        print(\"Invalid direction for 1D rotation!\")\n",
+    "        return arr\n",
+    "\n",
+    "# Function to rotate a specific row of a 2D array\n",
+    "def rotate_row(arr, direction, row_index, n):\n",
+    "    row = arr[row_index]\n",
+    "    n = n % len(row)  # Handle rotations greater than row length\n",
+    "    if direction == 'left':\n",
+    "        arr[row_index] = row[n:] + row[:n]\n",
+    "    elif direction == 'right':\n",
+    "        arr[row_index] = row[-n:] + row[:-n]\n",
+    "    else:\n",
+    "        print(\"Invalid direction for row!\")\n",
+    "    return arr\n",
+    "\n",
+    "# Function to rotate a specific column of a 2D array\n",
+    "def rotate_column(arr, direction, col_index, n):\n",
+    "    col = [row[col_index] for row in arr]\n",
+    "    n = n % len(col)  # Handle rotations greater than column length\n",
+    "    if direction == 'top':\n",
+    "        rotated_col = col[n:] + col[:n]\n",
+    "    elif direction == 'down':\n",
+    "        rotated_col = col[-n:] + col[:-n]\n",
+    "    else:\n",
+    "        print(\"Invalid direction for column!\")\n",
+    "        return arr\n",
+    "    \n",
+    "    # Place the rotated column back in the array\n",
+    "    for i in range(len(arr)):\n",
+    "        arr[i][col_index] = rotated_col[i]\n",
+    "    \n",
+    "    return arr\n",
+    "\n",
+    "# Main function to handle user inputs\n",
+    "def main():\n",
+    "    # Ask user to select 1D or 2D array rotation\n",
+    "    choice = input(\"Do you want to rotate a 1D or 2D array? (Enter '1D' or '2D'): \").strip().lower()\n",
+    "    \n",
+    "    if choice == '1d':\n",
+    "        arr = list(map(int, input(\"Enter the elements of the array (space-separated): \").split()))\n",
+    "        direction = input(\"Enter the rotation direction ('left' or 'right'): \").strip().lower()\n",
+    "        n = int(input(\"Enter the number of positions to rotate: \"))\n",
+    "        \n",
+    "        rotated_arr = rotate_1d(arr, direction, n)\n",
+    "        print(f\"Rotated array: {rotated_arr}\")\n",
+    "    \n",
+    "    elif choice == '2d':\n",
+    "        rows = int(input(\"Enter the number of rows: \"))\n",
+    "        cols = int(input(\"Enter the number of columns: \"))\n",
+    "        \n",
+    "        arr = []\n",
+    "        for _ in range(rows):\n",
+    "            arr.append(list(map(int, input(\"Enter a row (space-separated): \").split())))\n",
+    "        \n",
+    "        shift_type = input(\"Do you want to shift a row or column? (Enter 'row' or 'column'): \").strip().lower()\n",
+    "        direction = input(\"Enter the rotation direction ('left', 'right', 'top', or 'down'): \").strip().lower()\n",
+    "        index = int(input(f\"Enter the index of the {shift_type} to rotate: \"))\n",
+    "        n = int(input(\"Enter the number of positions to rotate: \"))\n",
+    "        \n",
+    "        if shift_type == 'row':\n",
+    "            arr = rotate_row(arr, direction, index, n)\n",
+    "        elif shift_type == 'column':\n",
+    "            arr = rotate_column(arr, direction, index, n)\n",
+    "        else:\n",
+    "            print(\"Invalid shift type!\")\n",
+    "        \n",
+    "        print(\"Rotated 2D array:\")\n",
+    "        for row in arr:\n",
+    "            print(row)\n",
+    "    else:\n",
+    "        print(\"Invalid choice! Please enter either '1D' or '2D'.\")\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "4a235a9a-fea9-4183-aac4-8b13fa4965a3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the list of numbers separated by space: 5\n",
+      "Enter the direction of rotation ('left' or 'right'): left\n",
+      "Enter the number of elements to rotate: 4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Array after rotation: [5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#create a user-defined function for rotated array \n",
+    "def rotate_array(arr, direction, num_elements):\n",
+    "    #Get the length of the array\n",
+    "    n= len (arr)\n",
+    "    #if the direction is left, we rotate to the left \n",
+    "    if direction == \"left\":\n",
+    "        #Perform a left rotation by slicing the array\n",
+    "        rotated = arr[num_elements %n:] + arr[:num_elements %n]\n",
+    "        #if the direction is right, we rotate to the right\n",
+    "    elif direction == \"right\":\n",
+    "        #Perform a right rotation by slicing the array \n",
+    "            rotated=arr[-num_elements %n:] + arr[:-num_elements %n]\n",
+    "    return rotated\n",
+    "\n",
+    "#Receive input from the user \n",
+    "array = list(map(int, input(\"Enter the list of numbers separated by space:\").split()))\n",
+    "direction = input(\"Enter the direction of rotation ('left' or 'right'):\").strip().lower()\n",
+    "num_elements = int(input(\"Enter the number of elements to rotate:\"))\n",
+    "\n",
+    "#Get the rotated array\n",
+    "result = rotate_array(array, direction, num_elements)\n",
+    "\n",
+    "#Output the result \n",
+    "print(\"Array after rotation:\", result)\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "b7715eee-dbc0-4029-9126-56576f5a9e2f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Do you want to rotate a 1D or 2D array? (Enter '1D' or '2D'):  1D\n",
+      "Enter the elements of the array (space-separated):  5\n",
+      "Enter the rotation direction ('left' or 'right'):  right\n",
+      "Enter the number of positions to rotate:  2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Rotated array: [5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def rotate_1d(arr, direction, n):\n",
+    "    \"\"\"Rotates a 1D array to the left or right.\"\"\"\n",
+    "    if not arr:  # Handle empty array case\n",
+    "        print(\"Array is empty. No rotation performed.\")\n",
+    "        return arr\n",
+    "\n",
+    "    n = n % len(arr)  # Ensure rotation is within bounds\n",
+    "    if n == 0:  # No need to rotate if n is 0\n",
+    "        return arr\n",
+    "\n",
+    "    if direction == 'left':\n",
+    "        return arr[n:] + arr[:n]\n",
+    "    elif direction == 'right':\n",
+    "        return arr[-n:] + arr[:-n]\n",
+    "    else:\n",
+    "        print(\"Invalid direction for 1D rotation! Choose 'left' or 'right'.\")\n",
+    "        return arr\n",
+    "\n",
+    "def rotate_row(arr, direction, row_index, n):\n",
+    "    \"\"\"Rotates a specific row of a 2D array.\"\"\"\n",
+    "    if row_index < 0 or row_index >= len(arr):\n",
+    "        print(\"Invalid row index!\")\n",
+    "        return arr\n",
+    "\n",
+    "    row = arr[row_index]\n",
+    "    n = n % len(row)  # Normalize rotation count\n",
+    "    if n == 0:\n",
+    "        return arr  # No rotation needed\n",
+    "\n",
+    "    if direction == 'left':\n",
+    "        arr[row_index] = row[n:] + row[:n]\n",
+    "    elif direction == 'right':\n",
+    "        arr[row_index] = row[-n:] + row[:-n]\n",
+    "    else:\n",
+    "        print(\"Invalid direction for row! Choose 'left' or 'right'.\")\n",
+    "    \n",
+    "    return arr\n",
+    "\n",
+    "def rotate_column(arr, direction, col_index, n):\n",
+    "    \"\"\"Rotates a specific column of a 2D array.\"\"\"\n",
+    "    if not arr or col_index < 0 or col_index >= len(arr[0]):\n",
+    "        print(\"Invalid column index!\")\n",
+    "        return arr\n",
+    "\n",
+    "    col = [row[col_index] for row in arr]\n",
+    "    n = n % len(col)  # Normalize rotation count\n",
+    "    if n == 0:\n",
+    "        return arr  # No rotation needed\n",
+    "\n",
+    "    if direction == 'up':  # Changed from 'top' to 'up' for clarity\n",
+    "        rotated_col = col[n:] + col[:n]\n",
+    "    elif direction == 'down':\n",
+    "        rotated_col = col[-n:] + col[:-n]\n",
+    "    else:\n",
+    "        print(\"Invalid direction for column! Choose 'up' or 'down'.\")\n",
+    "        return arr\n",
+    "\n",
+    "    # Update the 2D array with rotated column\n",
+    "    for i in range(len(arr)):\n",
+    "        arr[i][col_index] = rotated_col[i]\n",
+    "    \n",
+    "    return arr\n",
+    "\n",
+    "def main():\n",
+    "    \"\"\"Main function to handle user input and perform array rotation.\"\"\"\n",
+    "    choice = input(\"Do you want to rotate a 1D or 2D array? (Enter '1D' or '2D'): \").strip().lower()\n",
+    "    \n",
+    "    if choice == '1d':\n",
+    "        arr = list(map(int, input(\"Enter the elements of the array (space-separated): \").split()))\n",
+    "        if not arr:\n",
+    "            print(\"Array is empty. Exiting.\")\n",
+    "            return\n",
+    "        \n",
+    "        direction = input(\"Enter the rotation direction ('left' or 'right'): \").strip().lower()\n",
+    "        n = int(input(\"Enter the number of positions to rotate: \"))\n",
+    "\n",
+    "        rotated_arr = rotate_1d(arr, direction, n)\n",
+    "        print(f\"Rotated array: {rotated_arr}\")\n",
+    "    \n",
+    "    elif choice == '2d':\n",
+    "        try:\n",
+    "            rows = int(input(\"Enter the number of rows: \"))\n",
+    "            cols = int(input(\"Enter the number of columns: \"))\n",
+    "\n",
+    "            if rows <= 0 or cols <= 0:\n",
+    "                print(\"Rows and columns must be positive integers.\")\n",
+    "                return\n",
+    "\n",
+    "            arr = []\n",
+    "            for i in range(rows):\n",
+    "                row_input = list(map(int, input(f\"Enter row {i + 1} (space-separated): \").split()))\n",
+    "                if len(row_input) != cols:\n",
+    "                    print(\"Row length does not match the specified column count!\")\n",
+    "                    return\n",
+    "                arr.append(row_input)\n",
+    "\n",
+    "            shift_type = input(\"Do you want to shift a row or column? (Enter 'row' or 'column'): \").strip().lower()\n",
+    "            direction = input(\"Enter the rotation direction ('left', 'right', 'up', or 'down'): \").strip().lower()\n",
+    "            index = int(input(f\"Enter the index of the {shift_type} to rotate: \"))\n",
+    "            n = int(input(\"Enter the number of positions to rotate: \"))\n",
+    "\n",
+    "            if shift_type == 'row':\n",
+    "                arr = rotate_row(arr, direction, index, n)\n",
+    "            elif shift_type == 'column':\n",
+    "                arr = rotate_column(arr, direction, index, n)\n",
+    "            else:\n",
+    "                print(\"Invalid shift type! Please enter 'row' or 'column'.\")\n",
+    "                return\n",
+    "\n",
+    "            print(\"Rotated 2D array:\")\n",
+    "            for row in arr:\n",
+    "                print(\" \".join(map(str, row)))\n",
+    "        except ValueError:\n",
+    "            print(\"Invalid input! Please enter integers only.\")\n",
+    "    else:\n",
+    "        print(\"Invalid choice! Please enter '1D' or '2D'.\")\n",
+    "\n",
+    "# Run the program\n",
+    "if __name__ == \"__main__\":\n",
+    "    main()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4c63ec6e-0100-4b21-939a-f95a4f465f51",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
